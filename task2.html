@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #000065;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.card {
+   display: block;
+   background-color: white;
+   padding: 20px;
+   margin-top: 40px; 
+      }   
+.card a { 
+    color: #000;
+    text-decoration: none;
+    }
+.card li:hover a {
+    color: #2C2CF2;
+    }
+.card h2:hover a {
+    color: #2C2CF2;
+    }
+	
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.text3d-wrap-1 {    
+    position: relative;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    perspective: 3000px; 	
+}    
+.text3d-1 {
+    padding: 30px;
+    text-align: center;
+    margin-top: -18px;
+    transition: all 0.3s ease;
+	font-size: 100px;
+    transform: rotateX(40deg) rotateZ(5deg);
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 3px;
+    color: #f5f5f5;
+    text-shadow: white 0.006em 0.006em 0.007em, 
+	             #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px, 
+				 #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px, 
+				 #9c9c9c 1px 5px 1px, #9c9c9c 1px 6px 1px, 
+				 #9c9c9c 1px 7px 1px, #9c9c9c 1px 8px 1px, 
+				 #9c9c9c 1px 9px 1px, #9c9c9c 1px 10px 1px, 
+				 #9c9c9c 1px 11px 1px,#9c9c9c 1px 12px 1px,
+				 rgba(16, 16, 16, 0.4) 1px 18px 6px, 
+				 rgba(16, 16, 16, 0.2) 1px 22px 10px, 
+				 rgba(16, 16, 16, 0.2) 1px 26px 35px, 
+				 rgba(16, 16, 16, 0.4) 1px 30px 65px;
+}
+
+ 
+.menu-2 {
+     margin: 0;
+     padding: 0;
+     height: auto;
+     list-style-type: none;
+     background-color: none;
+     text-align: center;
+     }
+.menu-2 li {
+     margin: 8px 40px 8px 0;
+     padding: 2px 114px 4px;
+     background-color: #F26B13;
+     border: 2px solid #A64505;
+     border-radius: 1px 20px;
+     display: inline-block;
+     transition: all 0.7s ease 0s;
+     }
+.menu-2 a {
+    color: #f2f2f2;
+    text-decoration: none;
+    }
+.menu-2 li:hover {
+    background-color: #43F21F;
+    border-radius: 20px 1px;
+    }
+.menu-2 li:hover a {
+    color: #2C2CF2;
+    }
+	
+
+#line_block { 
+        width:100px; 
+        height:50px;
+        float:right;
+        margin: -50px 8px 8px 0px; ;
+        text-align:end;
+        padding: 15px;
+		color: #a9a9a9;
+        }
+		
+.container {
+        padding:10px;
+        }
+		
+.line {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        position:-webkit-sticky;
+        position:sticky;
+        bottom:0;
+        align-items: center;
+		background:#ddd;
+		margin-top: 90px;
+		}	
+.line a { 
+    color: #000;
+    text-decoration: none;
+    }
+.line h4:hover a {
+    color: #2C2CF2;
+    }
+	
+
+</style>
+</head>
+<body>
+
+<div class="text3d-wrap-1">
+  <h2> <span class="text3d-1">  Котоблог </span></h2>
+</div>
+
+<ul class="menu-2">
+   <li><a href="#">Главная</a></li>
+   <li><a href="#">Пользователи</a></li>
+   <li><a href="#">Сообщество</a></li>
+   <li><a href="#">Новое</a></li>
+</ul>
+
+<main class="container">
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Факты о котиках</h2>
+	  <hr></hr> <br>
+      <center>
+	    <img src="https://ic.pics.livejournal.com/analitic/34244958/485990/485990_900.jpg" height="300" width="350" alt="Здесь должна быть картинка">
+	  </center>
+	  
+	  <ul >
+        <li>Кошки спят в среднем 16 часов.</li>
+        <li>Мозг кошки на 90% похож на мозг человека. У нас с ними больше сходства, чем с собаками.</li>
+        <li>Коты, как и люди, бывают правшами и левшами.</li>
+        <li>Кошек можно различить, как людей по отпечаткам пальцев, только у кошачьих это отпечаток носа.</li>
+        <li>У кошек нет потовых желез по всему телу, как у людей. Они потеют только через лапы.</li>
+        <li>Кошки очень чувствительны к вибрации.Они могут почувствовать толчки землетрясения на 10–15 минут раньше людей.</li>
+        <li>Кошки не чувствуют сладкого вкуса.</li>
+      </ul>
+	  <hr></hr> <br>
+	  
+	  <div class="left">
+        <img src="https://static.tildacdn.com/tild6432-6264-4634-b563-656539306266/instagram-followers-.gif" height="60" width="150" alt="Здесь должна быть картинка">
+      </div>
+	  
+	  <div>
+        <div id="line_block"><h5>@hellokitty</h5></div>
+        <div id="line_block"><h5>Пользователь:</h5></div>
+      </div>
+	</div>
+	 
+    <div class="card">
+      <h2>Котомем</h2>
+	  <hr></hr> <br>
+      <center>
+	    <img src="https://cs.pikabu.ru/post_img/big/2014/01/10/9/1389358955_253046589.jpg" height="300" width="350" alt="Здесь должна быть картинка">
+	  </center>
+	  <hr></hr> <br>
+	  
+      <div class="left">
+        <img src="https://static.tildacdn.com/tild6432-6264-4634-b563-656539306266/instagram-followers-.gif" height="60" width="150" alt="Здесь должна быть картинка">
+      </div>
+	  
+	   <div>
+         <div id="line_block"><h5>@meow2564</h5></div>
+         <div id="line_block"><h5>Пользователь:</h5></div>
+       </div>
+    </div>
+	
+	<div class="card">
+       <center>
+	     <h2><a href="#">Загрузить еще посты</a></h2>
+	   </center>
+    </div>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Здесь могла бы быть реклама, но у нас лапки</h2>
+	  <center>
+	    <img src="https://xn--d1abanhqxof.xn--p1ai/img/preloader.gif" height="200" width="200" alt="Здесь должна быть картинка">
+	  </center>
+    </div>
+	
+    <div class="card">
+      <h3>Возмозно вам интересно:</h3>
+      <li><a href="#">как дрессировать кошек</a></li><br/>
+      <li><a href="#">топ лучших кормов</a></li><br/>
+      <li><a href="#">Почему кошка чихает</a></li>
+    </div>
+  </div>
+ </div>
+
+<div class="line">
+  <h4><a href="#">+Новый пост</a></h4>
+  <h4><a href="#">Сообщения</a></h4> 
+  <h4><a href="#">Уведомления</a></h4>
+  <h4><a href="#">Профиль</a></h4>
+  </div>
+</main>
+
+</body>
+</html>
